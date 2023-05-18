@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/location">
+
+
+    <fragment
+        android:id="@+id/camera"
+        android:name="com.example.snapchat.camera"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_camera_to_feed2"
+            app:destination="@id/feed" />
+    </fragment>
+    <fragment
+        android:id="@+id/feed"
+        android:name="com.example.snapchat.feed"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feed_to_story"
+            app:destination="@id/story" />
+    </fragment>
+    <fragment
+        android:id="@+id/message2"
+        android:name="com.example.snapchat.message"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/action_message2_to_camera2"
+            app:destination="@id/camera" />
+    </fragment>
+    <fragment
+        android:id="@+id/location"
+        android:name="com.example.snapchat.location"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_location_to_message2"
+            app:destination="@id/message2" />
+    </fragment>
+    <fragment
+        android:id="@+id/story"
+        android:name="com.example.snapchat.story"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" >
+        <action
+            android:id="@+id/action_story_to_location"
+            app:destination="@id/location" />
+    </fragment>
+</navigation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+    android:id="@+id/location_icon"
+     android:icon="@drawable/location"
+
+      android:title="" />
+
+  <item
+      android:id="@+id/message_icon"
+      android:icon="@drawable/message"
+      android:title=""
+      />
+
+  <item
+      android:id="@+id/camera_icon"
+      android:icon="@drawable/camera"
+      android:title=""
+      />
+
+  <item
+      android:id="@+id/Story_icon"
+      android:icon="@drawable/people"
+      android:title=""
+      />
+
+  <item
+      android:id="@+id/feed_icon"
+      android:icon="@drawable/play"
+      android:title=""
+      />
+
+
+
+
+
+</menu>
